@@ -1,0 +1,18 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root{--mint:#3E9C8A;--mint-deep:#2C7A6B;--mint-soft:#E4F3EE;--cream:#FBF6EC;--card:#FFFDF8;--lavender:#E9E4F5;--peach:#F6D9C8;
+--ink:#223049;--muted:#5F6B7F;--coral:#D9705F;--coral-soft:#FBE4DF;--sage:#5FA37A;--line:#EADFCB}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:"Nunito Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+:focus-visible{outline:3px solid var(--mint);outline-offset:2px;border-radius:10px}
+@layer components{
+ .card{@apply rounded-xl2 border bg-card p-5 sm:p-6;border-color:var(--line)}
+ .btn{@apply inline-flex items-center justify-center gap-2 rounded-full px-6 min-h-[48px] font-bold transition duration-200 active:scale-[.98]}
+ .btn-primary{@apply btn bg-mint text-white hover:bg-mintdeep}
+ .btn-ghost{@apply btn border-2 border-mint text-mintdeep hover:bg-[var(--mint-soft)]}
+ .h-display{@apply font-display font-semibold tracking-tight text-ink}
+}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.page{animation:rise .35s ease-out both}
+@keyframes pulse-drop{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.pulse-drop{animation:pulse-drop 1.4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.page,.pulse-drop{animation:none}*{transition:none!important}}
