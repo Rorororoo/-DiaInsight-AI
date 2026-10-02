@@ -11,7 +11,7 @@ export interface Row { Pregnancies: number; Glucose: number; BloodPressure: numb
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
   let res: Response;
   try { res = await fetch(BASE + path, init); }
-  catch { throw new Error("We couldn't reach the DiaLens server. Check that the backend is running, then try again."); }
+  catch { throw new Error("We couldn't reach the DiaInsight server. Check that the backend is running, then try again."); }
   let body: any = null;
   try { body = await res.json(); } catch { /* non-JSON */ }
   if (!res.ok) throw new Error(body?.detail && typeof body.detail === "string" ? body.detail : "The server returned an unexpected response.");

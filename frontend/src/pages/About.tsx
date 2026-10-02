@@ -3,9 +3,9 @@ const FLOW = ["Patient Data", "Machine Learning", "Risk Prediction", "SHAP Expla
 const TECH = ["React", "TypeScript", "Tailwind CSS", "FastAPI", "Python", "Scikit-learn", "Random Forest", "SHAP", "Pandas", "NumPy"];
 export default function About() {
   return (<div className="space-y-6">
-    <Title sub="DiaLens AI is an academic healthcare application that combines machine learning and explainable AI to provide diabetes risk insights.">About DiaLens AI</Title>
+    <Title sub="DiaInsight AI is an academic healthcare application that combines machine learning and explainable AI to provide diabetes risk insights.">About DiaInsight AI</Title>
     <section className="card"><h2 className="h-display text-2xl">Objective</h2><p className="mt-2">To develop an AI-based healthcare application that predicts diabetes risk and explains the factors influencing the prediction.</p>
-      <p className="mt-2 text-muted">Full title: DiaLens AI: Explainable AI-Based Diabetes Risk Assessment &amp; Health Analytics. Academic Mini Project – AI for Healthcare.</p></section>
+      <p className="mt-2 text-muted">Full title: DiaInsight AI: Explainable AI-Based Diabetes Risk Assessment &amp; Health Analytics. Academic Mini Project – AI for Healthcare.</p></section>
     <section className="card"><h2 className="h-display text-2xl">How it works</h2>
       <ol className="mt-4 flex flex-col items-stretch gap-2 md:flex-row md:items-center">{FLOW.map((s, i) => <li key={s} className="flex flex-col items-center gap-2 md:flex-row">
         <span className="w-full rounded-2xl bg-[var(--mint-soft)] px-4 py-3 text-center font-bold md:w-auto">{s}</span>{i < FLOW.length - 1 && <span aria-hidden className="text-mint">↓<span className="hidden md:inline">→</span></span>}</li>)}</ol></section>

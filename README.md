@@ -1,4 +1,4 @@
-# DiaLens AI: Explainable AI-Based Diabetes Risk Assessment & Health Analytics
+# DiaInsight AI: Explainable AI-Based Diabetes Risk Assessment & Health Analytics
 *Understand your health, one insight at a time.* Academic Mini Project, AI for Healthcare.
 
 > Educational use only. This application does not provide a medical diagnosis. Please consult a qualified healthcare professional for medical advice.

@@ -7,9 +7,9 @@ export default function Home({ go }: { go: (p: Page) => void }) {
     <section className="grid items-center gap-10 md:grid-cols-2">
       <div>
         <h1 className="h-display text-4xl leading-tight sm:text-5xl">Understand your health, one insight at a time.</h1>
-        <p className="mt-5 max-w-lg text-lg text-muted">DiaLens AI uses machine learning and explainable AI to provide diabetes risk insights from basic health measurements.</p>
+        <p className="mt-5 max-w-lg text-lg text-muted">DiaInsight AI uses machine learning and explainable AI to provide diabetes risk insights from basic health measurements.</p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <button className="btn-primary" onClick={() => go("check")}>✨ Start a Health Check</button>
+          <button className="btn-primary" onClick={() => go("check")}> Start a Health Check</button>
           <button className="btn-ghost" onClick={() => go("analytics")}>Explore Analytics</button></div>
         <p className="mt-6 text-sm text-muted">Educational AI tool · No diagnosis · Built for learning and research</p>
       </div>

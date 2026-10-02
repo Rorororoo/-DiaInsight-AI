@@ -18,7 +18,7 @@ export default function App() {
     <div className="min-h-screen">
       <header className="sticky top-0 z-30 border-b backdrop-blur" style={{ background: "rgba(251,246,236,.92)", borderColor: "var(--line)" }}>
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3" aria-label="Main">
-          <button onClick={() => go("home")} aria-label="DiaLens AI home"><Logo /></button>
+          <button onClick={() => go("home")} aria-label="DiaInsight AI home"><Logo /></button>
           <ul className="hidden items-center gap-1 md:flex">
             {NAV.map(([k, l]) => <li key={k}><button onClick={() => go(k)} aria-current={active === k ? "page" : undefined}
               className={`rounded-full px-4 py-2 font-semibold transition ${active === k ? "bg-[var(--mint-soft)] text-mintdeep" : "text-muted hover:text-ink"}`}>{l}</button></li>)}
