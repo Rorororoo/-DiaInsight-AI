@@ -79,8 +79,7 @@ Invalid input returns HTTP 422 `{"detail":"Please check these values: Pregnancie
 3. **Frontend → Vercel:** Import repo, root directory `frontend`, framework Vite, add env var `VITE_API_URL=https://<your-render-url>`, deploy.
 4. Open the Vercel URL; check `https://<render-url>/health`.
 
-## Screenshots
-_Add screenshots here (Home, Health Check, Result, AI Insights, Analytics)._
+
 
 ## Limitations
 Small dataset (768 records, a specific population); moderate recall (59%) so cases can be missed; zero values for Insulin/SkinThickness in the original data were cleaned upstream; SHAP explains the model, not causation; not clinically validated.
